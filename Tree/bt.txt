@@ -1,0 +1,101 @@
+## Section : 1 -> Binary Tree:
+    -At most two children
+    -Four traversal methods. 
+
+    Depth First Search:
+        1. Preorder traversal   : Root node -> Left Subtree -> Right Subtree 
+        2. Inorder traversal    : Left Subtree -> Root node -> Right Subtree   
+        3. Postorder traversal  : Left Subtree -> Right Subtree -> Root node
+
+    Breadth First Search:
+    4. Level order traversal
+        . We have to visit tree level vise, like 1st level -> 2nd level -> 3rd level etc
+        . We have to follow Left to Right way.
+        . For helper data structure we use queue Data Structure.
+
+    # Search a Node value in Binary Tree:
+        . Always use level order traversal.
+        . Almost same process as level order traversal.
+
+    # Delete a Node inside Binary Tree:
+        . As we use level order traversal to delete a node in Binary Tree.
+        . It will follow three steps:
+            1. Make a function get_deepest_node : It will return the last node inside binary tree.
+            2. Assign the return node by get_deepest_node function to deleted node.
+            3. Delete the deepest node.
+
+    # -------Binary Tree using Python List------
+    Same operation we perfrom using python list.
+
+
+
+## Section : 2 -> Binary Search Tree:
+
+    . In left Subtree the value of node is less than or equal to parent's node value.
+    . In right Subtree the value of node is greater then to it's parent's node value.
+    . It is faster then then Binary tree (not store the index value like binary tree).
+        . No need to traverse the whole tree.
+        . we can traverse through half-half tree.
+
+    * Following operations perfroming on BST:
+        1. Creation of Tree
+        2. Insertion of a Node
+        3. Deletion of a Node
+        4. Search for a value
+        5. Traverse all nodes
+        6. Deletion of tree
+
+    * Traversal are same as B.T.
+    
+    * Delete a node in BST:
+        . The node to be deleted is a leaf node (leaf node : which has no child).
+        
+        . The node to be deleted has a child node.
+            . for example: 50 -> 30(l), 60(r) -> 5(30 l) : here we want to delete 30, output will be 50 -> 5(l), 60(r)
+        
+        . The node to be deleted has two children.
+            . Replace the deleted node to successor node. (successor node: smallest node in right subtree)
+
+
+## Section : 3 -> AVL Trees:
+
+    . An Avl tree is self balancing binary Search tree (BST) where the difference between heights of left and right 
+        subtrees cannot be more than one for all nodes.
+
+    . If any time the height of left and right subtrees differ by more than one, then rebalancing is done to restore 
+        AVL property, this process is called rotation.
+    
+    . Not calculate the height of leaf nodes (as we know height of leaf node is 0).
+
+    * Common operations perfroming on AVL trees:
+        1. Creation of Avl trees
+        2. Search for a node in Avl trees
+        3. Traverse all nodes in Avl trees
+        4. Insert a node in Avl trees
+        5. Delete a node in Avl trees
+        6. Delete the entire Avl tree
+
+    . First three operations are same as binary search tree.
+    
+    . Insert a Node in Avl tree. There are two cases:
+        1. Rotation is required.
+        2. Rotation is not required.
+
+        . Rotation is required :
+            Four conditions:
+            . Left left condition (LL)      : Right Rotation, if parent has two children select the less height node (means less leaf nodes).
+            . Left right condition (LR)     : Left Rotation -> Right Rotation   
+            . Right right condition (RR)    : Left rotation
+            . Right left condition (RL)     : Right rotation -> Left rotation
+            
+        Move the disblanace node. if parent has two children select the more height node (means more leaf nodes).
+
+    . Delete a Node in AVL Tree:
+        1. Rotation is required.
+        2. Rotation is not required.
+
+        Rotation is not required:
+            . Case 1: 
+                . The node to be deleted is a leaf node.
+                . The node to be deleted has a child node.
+                . The node to be deleted has two children node.
