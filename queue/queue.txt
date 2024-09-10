@@ -1,0 +1,19 @@
+These are 7 operations that is performed by queue.
+    1. Createqueue
+    2. Enqueue
+    3. Dequeue
+    4. Peek   : return 1st element of queue without removing it.
+    5. isEmpty
+    6. isFull : Not used in LinkedList.
+    7. isDelete
+
+-> If we use List with capacity then it will become circular queue.
+-> without using capacity limit in a list then it will be very slow.
+
+#-------------Circular Queue------------------
+
+- Used when we have limit in python list but we are facing issues index in inserting element.
+For example a= [1,2,3] : it's size limit is 3.
+    - when we delete first element then after we insert index value will be change.
+
+ 

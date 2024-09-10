@@ -1,0 +1,38 @@
+It uses stack memory:
+means every time when function calling itself then function store in stack and further process and so on.
+
+Remember two thing : 
+1. Avoid infinte loop
+2. function calling itself
+
+-> It depends on situation where we can use for loop and recursion.
+-> IN some condition for and while loops are fast then recursion.
+
+# Recursion vs Iteration:
+1. Recursion is not time efficient, it uses stack memory which require push and pop operation. While iteration not uses stack.
+2. Recursion is not space efficient, .........................................................
+3. Easy to code in recursion.
+4. Using if condition in recursion we Avoid infinte loop, while in iteration we use varibles like i=0
+
+# When to use and avoid Recursion:
+// Use it:
+- Easily breakdown problem into similar subproblem.
+- Fine with extra overhead both time and space that comes with.
+- When we need quick working solution instead of efficient one.
+- When traverse a tree.
+- When we use memorization in recursion, like pre-order-traversal in tree : Root -> Left -> Right
+
+// Avoid it:
+- If time and complexity matters to us.
+- It requires more memory.
+- Recursion is slow.
+
+# Write Recursion in 3 Steps:
+
+example: factorial
+Step 1: Identify Recursive case - the flow
+- n * factorial(n-1)
+
+step 2: Base case the stopping criterion 
+- 0!= 1
+- 1!= 1

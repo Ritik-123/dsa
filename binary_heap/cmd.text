@@ -1,0 +1,28 @@
+Binary Heap:
+    . A Binary Heap is a Binary Tree along with these properties:
+    . A Binary Heap is either minimum heap or maximum heap.
+    . Min Heap:
+        . If value of each node is less than or equal to the value of both its children.
+    . Max Heap:
+        . It is exactly the opposite of min heap that is the value of each node is more than or equal to the value of 
+            both its children.
+
+Why we need it:
+    . algorithm should take O(logn) time.
+    . Insert left side element in sorted array: takes O(n) time.
+    
+Problems:
+    . Prim's algorithm.
+
+Common Operations on Binary Heap:
+    . Creation 
+    . Peek top
+    . Extract Min/ Max
+    . Traversal of Binary Heap
+    . Size of Binary Heap
+    . Insert value in Binary Heap
+    . Delete the entire Binary Heap
+
+Implementation options:
+    . Array implementation
+    . Reference / pointer implementation
