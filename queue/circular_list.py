@@ -1,5 +1,6 @@
 EMPTY= ' Circular Queue list is Empty !.'
 FULL= ' Circular Queue list is Full !.'
+
 class Queue:
     """
     This is Circular Queue using List.    
@@ -42,7 +43,7 @@ class Queue:
                 self.top = 0
             else:
                 self.top += 1
-                if self.start 
+                # if self.start 
             if self.start and self.top == -1:
                 self.list.append(value)
                 self.start += 1

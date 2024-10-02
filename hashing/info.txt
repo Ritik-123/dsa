@@ -1,0 +1,104 @@
+Hashing:
+
+    . Hashing is a method of sorting and indexing data. The idea behind hashing is to allow large amounts of data to be
+        indexed using keys commonly created by formulas.
+
+    . (User input pass to hash function, hash function returnes the integer value of key)
+
+Why Hashing:
+    
+    . It is time efficient in case of search Operations.
+
+Hashing Terminology:
+
+    . Hash Function: 
+        -> It is a function that can be used to map arbitary size of data of fixed size.
+
+    . Key: 
+        -> Input data be user.
+
+    . Hash Value:
+        -> A value that is returned by hash function.
+
+    . Hash Table:
+        -> It is a data structure which implements an associative array abstract data type, a structure that can map 
+            keys to values.
+
+    . Collision: A collision occurs when two different keys to a hash function produce the same output.
+
+
+Hash Function:
+
+    1. Mod function:
+
+        def mod(number, cellnumber):
+            return number % cellnumber
+
+        mod(400, 24)
+        mode(700, 24)
+
+    2. ASCII function:
+
+        . In this function we find the ascii value of each character in a string and sum of all characters inside a string.
+        . After that it will return modulus of given number by cellnumber.
+
+        def modascii(string, cellnumber):
+            total= 0
+
+Collision Resolution Techniques:
+
+    1. Direct Chainig
+    2. Open Addressing
+        a. Linear Probing
+        b. Quadratic Probing
+        c. Double Hashing
+
+    Direct Chainig:
+        . Implements the buckets as linked list. Colliding elements are stored in the lists.
+
+    Open Addressing:
+        . Colliding elements are stored in other vacant buckets. During storage and lookup these are found through so called probing.
+
+        a. Linear Probing:
+            . It places new key into closest following empty cell.
+
+        b. Quadratic Probing:
+            . Adding arbitary quadratic polynomial to the index until an empty cell is found.
+
+        c. Double Hashing:
+            . Interval between probes is computed by another hash function.
+
+
+Hash Table is full:
+
+    . Direct Chainig:
+        
+        . This situation will never arise.
+
+    . Open Addressing:
+        
+        . Create 2x size of current Hash Table and recall hashing for current keys.
+          
+
+Pros and Cons of Resolution Techniques:
+
+    Direct Chainig:
+
+        . Hash Table never gets full.
+        . Huge linked list causes performance leaks (Time complexity for search operation becomes O(n))
+
+    Open Addressing:
+
+        . Easy implementation.
+        . When hash Table is full, creation of new hash table affects performance (Time complexity for search 
+            operation becomes O(n))
+
+    . If input size is known we always use "Open Addressing".
+    
+    . If we perform deletion operation frequently we use direct chaining.
+
+Practical Use of Hashing:
+
+    . Password Storing. (stores the password information into encrypted form.)
+
+    . File System.

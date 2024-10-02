@@ -26,3 +26,14 @@ Common Operations on Binary Heap:
 Implementation options:
     . Array implementation
     . Reference / pointer implementation
+
+Extract a Node from Binary Heap:
+
+    Case : if we want to remove rootNode. There are left and right children of that rootNode.
+    
+    . Replace the last element with rootNode.
+    . Select the small node of left and right child. Now Swap rootNode with small node. Rpeat this process until i fix the binary heap tree.
+
+Delete entire Binary Heap
+
+    . assign rootNode to None.

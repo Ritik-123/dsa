@@ -1,0 +1,134 @@
+What is Graph?
+
+    . Graph consists of a finite set of vertices (or nodes) and a set of edges which connect a pair of nodes.
+
+Why Graph:
+
+    . To find: Shortest Path problem.
+
+Graph Terminology:
+
+    . Vertices: 
+        . Vertices are the nodes of the graph.
+
+    . Eddge: 
+        . The edge is the line that connects pairs of vertices.
+
+    . Unweighted graph:
+        . A graph which does not have a weight associated with any edge.
+
+    . Weighted graph:
+        . A graph which has weight associated with any edge.
+
+    . Undirected graph:
+        . In case the edges of the graph do not have a direction associated with them.
+
+    . Directed graph:
+        . If the edges in a graph have a direction associated with them.
+
+    . Cyclic graph:
+        . A graph which has at least one loop.
+
+    . Acyclic graph:
+        . A graph with no loop.
+
+    . Tree:
+        . It is a special case of directed acyclic graph.
+
+
+Types of Graphs:
+
+    1. Directed
+        
+        1.1 Weighted
+            1.1.1 Positive
+            1.1.2 Negative
+
+        1.2 Unweighted
+
+    2. Undirected
+
+        2.1 Weighted
+            2.1.1 Positive
+            2.1.2 Negative 
+
+        2.2 Unweighted
+
+
+Graph types:
+
+    1. Unweighted - undirected
+    2. Unweighted - directed
+    3. Positive - Weighted - undirected
+    4. Positive - weighted - directed
+    5. Negative - weighted - undirected
+    6. Negative - weighted - directed
+
+Graph Representation:
+
+    Adjacency Matrix:
+        
+        . An Adjacency matrix is a square matrix or you can say it is a 2D array. And the elements of the matrix 
+            indicate whether pairs of vertices are adjacent or not in the graph.
+
+    Adjacency List:
+
+        . An Adjacency list is a collection of unordered list used to represent a graph.
+            Each list describes the set of neighbors of a vertex in the graph.
+
+    . If a graph is complete or almost complete we should use Adjacency matrix.
+
+    . If the number of edges are few then we should use Adjacency list.
+
+
+BFS (Braeadth First Search):
+    
+    . Use queue (FIFO)
+    . Time Complexity: O(V+E)
+    . Space Complexity: O(V)
+
+DFS (Depth First Search):
+
+    . It is an algorithm for traversing a graph data structure which starts selecting some arbitary node and explores 
+        as far as pssible along each edge before backtracking
+        
+        . In DFS we are going as deep as possible using given edge. Once we have reached the bottom, then we do 
+            the backtracking.
+
+    . Use Stack (LIFO)
+    . Time Complexity: O(V+E)
+    . Space Complexity: O(V)
+
+Difference between BFS and DFS:
+
+    BFS: 
+        
+        . It goes in breadth first.
+        . Queue data structure used internally.
+        
+        . When to use:
+            . If we know the target is close to the staring point.
+
+    DFS:
+        
+        . It goes in depth first.
+        . Stack data structure used internally.
+
+        . When to use:
+            . If we already know that the target vertex is buried very deep.
+
+Topological Sort Algorithm:
+
+    . Topological sort:
+
+        . Sorts given action in such a way that if there is a dependency of one action on another, then
+            the dependent action always comes later then its parent action.
+
+    . If a vertex depends on a current vertex:
+        . Go to that vertex and then come back to current vertex.
+
+    . Else:
+        . Push current vertex to Stack.
+
+    . Time Complexity: O(V+E)
+    . Space Complexity: O(V+E) 

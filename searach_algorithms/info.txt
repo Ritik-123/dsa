@@ -1,0 +1,41 @@
+Search Algorithms:
+
+Linear Search:
+
+    Linear Search Pseudocode : 
+
+    . Create function with two parameters which are an array and a value.
+    . Loop through the array and check if the current array element is equal to the value.
+    . If it is return the index which the element is found.
+    . if the value is never found return -1.
+
+    When to use:
+
+        . When given array is unsorted.
+
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+
+
+Binary Search:
+
+    . Much more faster than linear search.
+    . Half of the remaining elements can be eliminated at a time, instead of eliminated them one by one.
+    . It only works for sorted arrays
+
+    Binary Search Pseudocode:
+
+        . Create function with two parameters which are sorted array and a value.
+        . Create two pointers: a left pointer at the start of the array and the right pointer at the end of array.
+        . Based on left and right pointers calculate the middle pointer.
+        . While middle is not equal to the value and start <= end loop:
+            . If the middle is greater than the value move the right pointer down.
+            . If the middle is less than the value move the left pointer up.
+        . If the value is never found return -1.
+
+    Time Complexity:
+        
+        . Worst Case: O(logn)
+        . Best Case: O(1) 
+
+    Space Complexity: O(1)

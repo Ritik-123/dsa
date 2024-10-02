@@ -1,0 +1,61 @@
+Trie
+
+    . A Trie is a tree based data structure that organizes information in a hierarchy.
+
+Properties:
+
+    . Used to store or search strings in a space and time efficient way.
+    . Any Node in trie can store non repetetive multiple characters.
+    . Every Node stores link of the next character of the string.
+    . Every Node keeps track of 'end of string'.
+
+Why Need Trie:
+
+    . Spell checker (like when we search on google it will suggest similar words.)
+    . Auto Completion
+
+Common Operations omn Trie:
+
+    . Creation in Trie.
+    . Insertion in Trie.
+    . Search for a string in Trie.
+    . Deletion from Trie.
+
+Creation in Trie:
+
+    . Define a class TrieNode : in which two variable : children and endofstring.
+    . Make a Trie class in which create a variable: root : inside root call TrieNode() (class that defined above).
+
+Insertion in Trie:
+
+    . Case 1: A Trie is blank.
+    . Case 2: New string's prefix is Common to another string prefix.
+    . Case 3: New string's prefix is already present as complete string.
+    . Case 4: String to be inserted is already present in trie.
+
+Search in Trie:
+
+    . Case 1: String does not exist in Trie.
+        . If first character is not in rootNode.
+    
+    . Case 2: String exist in Trie.
+        . If all characters exist in Node with end of string.
+        . If next of Node is end of string then we can say string is exist in trie else not.
+
+    . Case 3: String is a prefix of another string, but it does not exist in trie.
+            (Same how same as second point in Case 2)
+
+Delete a Node in Trie:
+
+    . Deletion of node in trie is always start from leaf node (never happens root to leaf).
+
+    . Here we have 4 cases:-
+
+        . Case 1: Some other prefix of a string is same as the one that we want to delete (API, APPLE).
+
+        . Case 2: The string is a prefix of another string (API, APIS).
+                    (Here put end of string to false)
+
+        . Case 3: Other string is a prefix of this string (APIS, AP).
+
+        . Case 4: Not any node depends on the string (K)

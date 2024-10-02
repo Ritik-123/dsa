@@ -1,4 +1,5 @@
 EMPTY= 'Queue list is Empty.'
+
 class Queue:
     """
     This Queue is using just List.

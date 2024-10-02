@@ -1,0 +1,165 @@
+Sorting:
+
+    . It refers to arranging data into particular format either ascending or descending.
+
+Practical Use of Sorting:
+
+    . Microsoft Excel : Built in functionality to sort data.
+    
+    . Online stores : Online shopping websites generally have option for sorting by price, review, ratings.
+
+Types of Sorting:
+
+    1. Space Used
+
+        1.1 In place : 
+            
+            . Sorting algorithm which does not require any extra space for sorting.
+            . Example: Bubble Sort
+        
+        1.2 Out of place: 
+            
+            . Sortin algorithm which requires extra space for sorting. 
+            . Example: Merge Sort
+
+    2. Stability
+
+        2.1 Stable:
+
+            . If a sorting algorithm after sorting the contents does not change the sequence of similar content in 
+                which they appear, then the sorting is called stable sorting. 
+            . Example: Insertion Sort
+
+        2.2 Unstable:
+
+            . If a sorting algorithm after sorting the contents changes the sequence of similar content in which 
+                they appear, then it is called Unstable sorting.
+            . Example: Quick Sort
+
+
+Sorting Terminology
+
+    1. Increasing Order:
+
+        . If successive element is greater then the previous one.
+        . Example: 1,3,5,7,11
+
+    2. Decreasing Order:
+
+        . If successive element is less then the previous one.
+        Example: 11,7,5,3,1
+
+    3. Non Increasing Order:
+
+        . If successive element is less than or equal to its previous element in the sequence.
+        Example: 11,9,7,5,5,3,1
+
+    4. Non Decreasing Order:
+
+        . If successive element is greater then or equal to its previous element in the sequence.
+        Example: 1,3,5,7,7,11
+
+
+Sorting Algorithms:
+
+    1. Bubble Sort
+    2. Selection Sort
+    3. Insertion Sort
+    4. Bucket Sort
+    5. Merge Sort
+    6. Quick Sort
+    7. Heap Sort
+
+
+Which one to select:
+
+    . Stability
+    . Space efficient
+    . Time efficient
+
+1. Bubble Sort:
+
+    . It is also referred as Sinking sort.
+    . We repeatedly compare each pair of adjacent items and swap them if they are in the wrong order.
+
+    When to use Bubble sort:
+
+        . When the input is already sorted.
+        . Space is a concern.
+        . Easy to implement.
+
+    When to avoid Bubble sort:
+
+        . Average time complexity is poor.
+
+    Time complexity: O(n^2)
+    Space complexity: O(1)
+
+2. Selection Sort:
+
+    . In this case we repeatedly find then minimum element and move it to the sorted part of array to make unsorted 
+        part sorted.
+
+    When to use Selection sort:
+        
+        . Insufficient memory.
+        . Easy to implement
+
+    When to avoid Selection sort:
+
+        . When time is concern.
+
+    Time complexity: O(n^2)
+    Space complexity: O(1)
+
+3. Insertion Sort:
+
+    . Divide the array in two part.
+    . Take first element from unsorted array and find its correct position in sorted array.
+    . Repeat until unsorted array is empty.
+
+    When to use Insertion sort:
+
+        . When we have Insufficient Memory.
+        . Easy to implement.
+        . When we have continuous inflow of numbers and we want to keep them sorted.
+
+    When to avoid Insertion sort:
+
+        . When time is concern.
+
+    Time complexity: O(n^2)
+    Space complexity: O(1)
+
+4. Bucket Sort
+
+    . Create buckets and distribute elements of array into buckets.
+    . Sort buckets individually.
+    . Merge buckets after sorting.
+
+    . Number of buckets: round(sqrt(number of elements))
+        -> round(sqrt(9))= 3
+
+    . Appropriate bucket = ceil(value * number of buckets / max value)
+
+    . Sort all buckets (using any sort algorithm).
+
+    When to use Bucket sort:
+
+        . When input uniformly distributed over range.
+            > For example: 1,4,5,3,7,8,9 
+                -> not like this: 1,2,4,91,93,95
+
+    . When to avoid bucket sort:
+
+        . When space is concern.
+
+    Time complexity: O(n^2)
+    Space complexity: O(n)
+
+5. Merge Sort:
+
+    . Merge sort is a divide and conquer algorithm.
+    . Divide the input array into two halves and we keep having recursively until they become too small that 
+        cannot be broken further.
+    . Merge halves by sorting them.
