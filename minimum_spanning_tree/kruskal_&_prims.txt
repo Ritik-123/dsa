@@ -1,0 +1,31 @@
+Difference between Kruskal's Algorithm and Prim's Algorithm:
+
+Kruskal's Algorithm:
+
+    . Concentrates on edges.
+    . Finalize edge in each iteration (minimum weight edge).
+
+Prim's Algorithm:
+
+    . Concentrates on vertices.
+    . Finalize vertex in each iteration (minimum weight vertex)
+
+
+Kruskal's Application:
+
+    . Landing Cables
+    . TV Network
+    . Tour Operations
+    . LAN Networks
+    . A Network of pipes and drinking water or natural gas
+    . An electric grid
+    . Single-link Cluster
+
+Prim's Application:
+
+    . Network for roads and Rail tracks connecting all the cities.
+    . Irrigation channels and placing microwave towers.
+    . Designing a fibre-optic grid or ICS.
+    . Travelling SalesMan Problem.
+    . Cluster Analysis.
+    . Pathfinding algorithms used in AI(Artificial Intelligence).

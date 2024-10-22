@@ -1,0 +1,25 @@
+Disjoint:
+
+    .   It is a data structure that keeps track of set of elements which are partitioned into a number of disjoint and 
+        non overlapping sets and and each sets have representative which helps in identifying that sets.
+
+There are three standard sets:
+    
+    1. Make set : Used to create initial set.
+    2. Union    : Merge two given sets. 
+    3. Find Set : Returns the set name in which this element is there.
+
+    For example: 
+    set: A, B, C, D, E
+    
+    Make Set: A, B, C, D, E
+
+    Union: Union(A, B) = AB, Union(A, E)= ABE
+
+    Find Set: findSet(B)= AB, findSet(E)= ABE
+
+Time Complexity:
+
+    . Find Set: O(1)
+
+    . Union: O(1)

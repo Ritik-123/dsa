@@ -1,0 +1,10 @@
+Minimum Spanning Tree:
+
+    . A Minimum Spanning Tree (MST) is a subset of the edges of connected, weighted and undirected graph which:
+        . Connects all vertices together.
+        . No cycle
+        . Minimum total edge
+
+Real Life Problem:
+
+    . Connects five island with bridges. 

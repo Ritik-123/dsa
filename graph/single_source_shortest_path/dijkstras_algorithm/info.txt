@@ -1,0 +1,12 @@
+Dijkstra's Algorithm:
+
+    . It works when we have positive weight on edges.
+
+    . Dijkstra's Algorithm with negative cycle:
+
+        . Dijkstra Algorithm cannot find a solution with negative cycle.
+
+        . A path is called negative cycle if:
+
+            . There is a cycle (a cycle is a path of edges or vertices where a vertex is reachable from itself)
+                Total weight of a cycle is negative number. 

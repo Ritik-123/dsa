@@ -1,0 +1,25 @@
+Floyd Warshall Algorithm
+
+
+if D[u][v] > D[u][viaX] + D[viaX] [v]:
+    D[u][v] = D[u][viaX] + D[viaX] [v]
+
+
+1. The vertex is not reachable.
+
+2. Two vertices are directly connected.
+    . This is the best solution.
+    . It can be imporoved via other vertex.
+
+3. Two vertices are connected via other vertex.
+
+Floyd Warshall with Negative cycle:
+
+    . To go through cycle we need to go negative cycle participating vertex at least twice.
+
+    . Floyd warshall algorithm never runs loop twice via a vertex.
+
+    . Hence, FW can never detect a negative cycle.
+
+Time Complexity: O(V^3)
+Space Complexity: O(V^2)

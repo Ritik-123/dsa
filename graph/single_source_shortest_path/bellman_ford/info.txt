@@ -1,0 +1,23 @@
+
+Bellman Ford Algorithm:
+
+    . It is used to find the single source shortest path problem. 
+        if there is a negative cycle it catches it and report its existance.
+
+    . We have to do iteration (v-1) times. Here v is vertices. 
+
+    . It works same as Dijkstra's Algorithm except some conditions.
+
+    . If the distance of destination vertex > (distance of source vertex + 
+        weight between source and destination vertex):
+        
+        . Update distance of destination vertex to (distance of source vertex + weight between source and 
+            destination vertex)
+
+Why Bellman Ford runs (V-1) times:
+
+    . If any node acheived better distance in previous iteration, 
+        then the better distance is used to improve distance of other vertices.
+
+Time Complexity: O(EV)
+Space Complexity: O(V)
